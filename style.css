@@ -200,12 +200,21 @@ nav li:hover{
 
 .card{
   width: 320px;  
+  max-width: 320px;
   display: flex;
   flex-direction: column;
   border-radius: 0.5rem;
   overflow: hidden;
   transition: 0.2s ease-in-out;
+  
 }
+.card img {
+  width: 100%;
+  height: 200px;      /* fixed height for all images */
+  object-fit: cover;  /* crop images uniformly */
+  display: block;
+}
+
 
 
 .card:hover{
